@@ -17,7 +17,6 @@ namespace Bootloader.Bootloader
         internal static readonly string[] AdditionalAssemblies = new string[]{
             "DeminaRuntime.dll",
             "LibNoise.dll",
-            "Lidgren.Network.dll",
             "log4net.dll",
             "ProjectMercury.dll",
             "Steamworks.NET.dll",
