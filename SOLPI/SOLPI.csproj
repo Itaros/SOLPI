@@ -74,6 +74,7 @@
     <Compile Include="Instrumentations\AccessTransformerNoTarget.cs" />
     <Compile Include="Instrumentations\ContentHandlerGetTextureHook.cs" />
     <Compile Include="Instrumentations\ContentHandlerSheetExtractor.cs" />
+    <Compile Include="Instrumentations\EntrypointOverrideHooker.cs" />
     <Compile Include="Instrumentations\ExtractAllVanillaItems.cs" />
     <Compile Include="Instrumentations\ExtractAllVanillaProjects.cs" />
     <Compile Include="Instrumentations\GameLaunchHooker.cs" />

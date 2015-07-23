@@ -23,6 +23,7 @@ namespace SOLPI
 
             _procList.Add(new RedefineGameVersionString());
             _procList.Add(new AccessTransformerNoTarget());
+            _procList.Add(new EntrypointOverrideHooker());
             _procList.Add(new RedefineGameLocalStorage());
             _procList.Add(new ExtractAllVanillaItems());
             _procList.Add(new ExtractAllVanillaProjects());

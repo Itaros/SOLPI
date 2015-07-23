@@ -1,4 +1,5 @@
-﻿using SOLPolymorph.SignsOfLife.Polymorph.Registries;
+﻿using SignsOfLife;
+using SOLPolymorph.SignsOfLife.Polymorph.Registries;
 using SOLPolymorph.SignsOfLife.Polymorph.Replacements;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,20 @@ namespace SOLPolymorph.SignsOfLife.Polymorph.Hooks
 {
     public static class SOLRuntimeHooks
     {
+
+        public static void OnEntryPoint(object obj)
+        {
+            Console.WriteLine("Entry point!");
+            SpaceGame game = new SpaceGame();
+            try
+            {
+                game.Run();
+            }
+            finally
+            {
+                game.Dispose();
+            }
+        }
 
         public static void OnSpaceGameLaunch(object obj)
         {
